@@ -64,5 +64,9 @@ const destinations = [
   "image":"https://static.wikia.nocookie.net/tardis/images/b/b7/The_Citadel.jpg/revision/latest/scale-to-width-down/960?cb=20100216140030",
   "alt":"A city residing in a transparent bubble, nested in the desert. The city bubble is surrounded by sandy hills, and the setting sun casts a glow over the orange sky."},
   {"id":6,
-  "destination":"Jakarta, Indonesia","estimatedLodgingCostPerDay":70,"estimatedFlightCostPerPerson":890,"image":"https://images.unsplash.com/photo-1555333145-4acf190da336?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80","alt":"lit up city at night"}
+  "destination":"Chasm Forge",
+  "estimatedLodgingCostPerDay":70,
+  "estimatedFlightCostPerPerson":890,
+  "image":"https://static.wikia.nocookie.net/tardis/images/b/b9/Chasm_Forge.jpg/revision/latest/scale-to-width-down/800?cb=20170513224328",
+  "alt":"A space station, with a central hub and two ring structures surrounding the hub. There is a small hub at the edge of the outer ring. The sky is dark and void of stars."}
 ]
