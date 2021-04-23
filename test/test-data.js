@@ -69,4 +69,4 @@ const destinations = [
   "estimatedFlightCostPerPerson":890,
   "image":"https://static.wikia.nocookie.net/tardis/images/b/b9/Chasm_Forge.jpg/revision/latest/scale-to-width-down/800?cb=20170513224328",
   "alt":"A space station, with a central hub and two ring structures surrounding the hub. There is a small hub at the edge of the outer ring. The sky is dark and void of stars."}
-]
+];
