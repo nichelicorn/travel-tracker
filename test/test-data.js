@@ -58,6 +58,11 @@ const destinations = [
   "image":"https://static.wikia.nocookie.net/tardis/images/4/46/Pete%27s_World.jpg/revision/latest/scale-to-width-down/1000?cb=20090110102822",
   "alt":"A strange view of London. There are several airships in the sky, traveling in various directions."},
   {"id":5,
-  "destination":"Madrid, Spain","estimatedLodgingCostPerDay":150,"estimatedFlightCostPerPerson":650,"image":"https://images.unsplash.com/photo-1543785734-4b6e564642f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80","alt":"city with clear skys and a road in the day time"},
-  {"id":6,"destination":"Jakarta, Indonesia","estimatedLodgingCostPerDay":70,"estimatedFlightCostPerPerson":890,"image":"https://images.unsplash.com/photo-1555333145-4acf190da336?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80","alt":"lit up city at night"}
+  "destination":"Gallifrey",
+  "estimatedLodgingCostPerDay":150,
+  "estimatedFlightCostPerPerson":650,
+  "image":"https://static.wikia.nocookie.net/tardis/images/b/b7/The_Citadel.jpg/revision/latest/scale-to-width-down/960?cb=20100216140030",
+  "alt":"A city residing in a transparent bubble, nested in the desert. The city bubble is surrounded by sandy hills, and the setting sun casts a glow over the orange sky."},
+  {"id":6,
+  "destination":"Jakarta, Indonesia","estimatedLodgingCostPerDay":70,"estimatedFlightCostPerPerson":890,"image":"https://images.unsplash.com/photo-1555333145-4acf190da336?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80","alt":"lit up city at night"}
 ]
