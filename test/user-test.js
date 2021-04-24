@@ -2,6 +2,7 @@ import { expect } from "chai";
 
 import User from "../src/User.js";
 import { userData } from "../test/test-data.js";
+import { tripData } from "../test/test-data.js"
 
 let user1, user3, user7, user13, agent;
 
@@ -17,43 +18,63 @@ describe("The User class", () => {
 
   describe("The User properties", () => {
     // it should be an instance of a User
-    it.skip("should instantiate a new User", () => {
+    it("should instantiate a new User", () => {
       expect(user1).to.be.an.instanceof(User);
     })
     // it should have an id
     // id can be a number or string
-    it.skip("should have an id", () => {
+    it("should have an id", () => {
       expect(user1.id)to.equal(1);
       expect(agent.id)to.equal("agent");
     })
     // it should have a name
     // name should be a string
-    it.skip("should have a name", () => {
+    it("should have a name", () => {
       expect(user3.name).to.equal("Clara Oswald");
       expect(user7.name).to.equal("Rose Tyler");
     })
     // it should have a userName
     // userName should be a string
     // userName should be created by concatenating "traveler" + their id number
-    it.skip("should have a userName", () => {
+    it("should have a userName", () => {
       expect(user13.userName).to.equal("traveler13");
       expect(agent.userName)to.equal("agent");
     })
     // it should have a password
     // password should be a string
-    it.skip("should have a password", () => {
+    it("should have a password", () => {
       expect(user7.password).to.equal("traveler2020");
     })
+  })
+  // it should have a method to view trips
+  // should be able to select past trips
+  // should be able to select present trips
+  // should be able to select future trips (approved trips)
+  // should be able to select pending trips
+  describe("A method to view trips", () => {
+    it("should be a method", () => {
+      expect(user1.viewTrip).to.be.a(function);
+    })
+
+    it("should be able to select trips from the past", () => {
+      // this method should return a trip from the past
+      let pastTrip = user1.viewTrip("2019/09/16").to.deep.equal({
+          "id":1,
+          "userID":1,
+          "destinationID":1,
+          "travelers":1,
+          "date":"2019/09/16",
+          "duration":8,
+          "status":"approved",
+          "suggestedActivities":[]
+        })
+    })
+
   })
 
 })
 
 
-// it should have a method to view trips
-  // should be able to select past trips
-  // should be able to select present trips
-  // should be able to select future trips (approved trips)
-  // should be able to select pending trips
 
 // it should have a method to track spending
   // should be able to return past trip spending

@@ -77,7 +77,7 @@ const agentData = {
   ]
 };
 
-const trips = {
+const tripData = {
   "trips":
     [
       {
