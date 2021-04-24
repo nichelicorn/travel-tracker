@@ -13,20 +13,20 @@ describe("The User class", () => {
     user7 = new User(7, "Rose Tyler");
     user13 = new User(13, "Bill Potts");
     agent = new User("agent", "The Doctor");
-  });
+  })
 
   describe("The User properties", () => {
     // it should be an instance of a User
     it("should instantiate a new User", () => {
       expect(user1).to.be.an.instanceof(User);
-    });
-
-    
-  });
+    })
 
 
+  })
 
-});
+
+
+})
 
 
 // it should have an id
