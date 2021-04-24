@@ -1,9 +1,9 @@
 const userData = [
-  {"id":1,"name":"River Song"},
-  {"id":3,"name":"Clara Oswald"},
-  {"id":7,"name":"Rose Tyler",},
-  {"id":13,"name":"Bill Potts"},
-  {"id":"agent","name":"The Doctor"}
+  {"id":1,"name":"River Song","userName":"traveler1","password":"travel2020"},
+  {"id":3,"name":"Clara Oswald","userName":"","password":"travel2020"},
+  {"id":7,"name":"Rose Tyler","userName":"","password":"travel2020"},
+  {"id":13,"name":"Bill Potts","userName":"","password":"travel2020"},
+  {"id":"agent","name":"The Doctor","userName":"","password":""}
 ];
 
 const travelerData = [
