@@ -17,30 +17,37 @@ describe("The User class", () => {
 
   describe("The User properties", () => {
     // it should be an instance of a User
-    it("should instantiate a new User", () => {
+    it.skip("should instantiate a new User", () => {
       expect(user1).to.be.an.instanceof(User);
     })
-
-
+    // it should have an id
+    // id can be a number or string
+    it.skip("should have an id", () => {
+      expect(user1.id)to.equal(1);
+      expect(agent.id)to.equal("agent");
+    })
+    // it should have a name
+    // name should be a string
+    it.skip("should have a name", () => {
+      expect(user3.name).to.equal("Clara Oswald");
+      expect(user7.name).to.equal("Rose Tyler");
+    })
+    // it should have a userName
+    // userName should be a string
+    // userName should be created by concatenating "traveler" + their id number
+    it.skip("should have a userName", () => {
+      expect(user13.userName).to.equal("traveler13");
+      expect(agent.userName)to.equal("agent");
+    })
+    // it should have a password
+    // password should be a string
+    it.skip("should have a password", () => {
+      expect(user7.password).to.equal("traveler2020");
+    })
   })
-
-
 
 })
 
-
-// it should have an id
-  // id can be a number or string
-
-// it should have a name
-  // name should be a string
-
-// it should have a userName
-  // userName should be a string
-  // userName should be created by concatenating "traveler" + their id number
-
-// it should have a password
-  // password should be a string
 
 // it should have a method to view trips
   // should be able to select past trips
