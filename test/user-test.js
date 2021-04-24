@@ -1,7 +1,7 @@
 import { expect } from "chai";
 
 import User from "../src/User.js";
-import { userData } from "../src/test/test-data.js";
+import { userData } from "../test/test-data.js";
 
 let user1, user3, user7, user13, agent;
 
@@ -15,12 +15,19 @@ describe("The User class", () => {
     agent = new User("agent", "The Doctor");
   });
 
+  describe("The User properties", () => {
+    // it should be an instance of a User
+    it("should instantiate a new User", () => {
+      expect(user1).to.be.an.instanceof(User);
+    });
+
+    
+  });
 
 
 
 });
 
-// it should be an instance of a User
 
 // it should have an id
   // id can be a number or string
