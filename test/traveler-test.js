@@ -1,7 +1,7 @@
 import { expect } from "chai";
 
 import Traveler from "../src/Traveler.js";
-import { travelerData } from "../test/test-data.js";
+import travelerData from "../test/test-data.js";
 
 let traveler1, traveler3, traveler7, traveler13;
 
