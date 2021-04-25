@@ -132,5 +132,5 @@ describe("The User class", () => {
     })
 
   })
-  
+
 })
