@@ -1,6 +1,7 @@
 import { expect } from "chai";
 
 import Agent from "../src/Agent.js";
+import Traveler from "../src/Traveler.js"
 import { agentData } from "../test/test-data.js";
 import { travelerData } from "../test/test-data.js"; // this seems like it may be redundant - can agentData and travelerData be imported in one line?
 
