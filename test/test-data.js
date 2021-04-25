@@ -254,4 +254,4 @@ const destinationData = {
   ]
 };
 
-module.exports = { userData, travelerData, agentData, tripData, destinationData }
+export { userData, travelerData, agentData, tripData, destinationData };
