@@ -11,7 +11,7 @@ describe("The Traveler class", () => {
     traveler1 = new Traveler(travelerData[0]);
     traveler3 = new Traveler(travelerData[1]);
     traveler7 = new Traveler(travelerData[2]);
-    traveler13 = newTraveler(travelerData[3]);
+    traveler13 = new Traveler(travelerData[3]);
   })
 
   describe("The Traveler properties", () => {
