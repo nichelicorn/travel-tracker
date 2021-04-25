@@ -47,10 +47,6 @@ describe("The User class", () => {
     })
   })
   // it should have a method to view trips
-  // should be able to select past trips
-  // should be able to select present trips
-  // should be able to select future trips (approved trips)
-  // should be able to select pending trips
   describe("A method to view trips", () => {
     it("should be a method", () => {
       expect(user1.viewTrip).to.be.a(function);
@@ -58,17 +54,39 @@ describe("The User class", () => {
 
     it("should be able to select trips from the past", () => {
       // this method should return a trip from the past
-      let pastTrip = user1.viewTrip("2019/09/16").to.deep.equal({
-          "id":1,
-          "userID":1,
-          "destinationID":1,
-          "travelers":1,
-          "date":"2019/09/16",
-          "duration":8,
-          "status":"approved",
-          "suggestedActivities":[]
-        })
+      // should be able to select past trips
+      let pastTrip = user1.viewTrip("2019/09/16");
+
+      expect(pastTrip).to.deep.equal({
+        "id":1,
+        "userID":1,
+        "destinationID":1,
+        "travelers":1,
+        "date":"2019/09/16",
+        "duration":8,
+        "status":"approved",
+        "suggestedActivities":[]
+      })
     })
+    // should be able to select present trips
+    it("should be able to select trips a user is currently on", () => {
+      let presentTrip = user7.viewTrip("2020/10/14");
+
+      expect(presentTrip).to.deep.equal({
+        "id":11,
+        "userID":7,
+        "destinationID":3,
+        "travelers":4,
+        "date":"2020/10/14",
+        "duration":4,
+        "status":"approved",
+        "suggestedActivities":[]
+      })
+    })
+    // should be able to select future trips (approved trips)
+    // should be able to select pending trips
+
+
 
   })
 
