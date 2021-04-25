@@ -57,16 +57,7 @@ describe("The User class", () => {
       // should be able to select past trips
       let pastTrip = user1.viewTrip("2019/09/16");
 
-      expect(pastTrip).to.deep.equal({
-        "id":1,
-        "userID":1,
-        "destinationID":1,
-        "travelers":1,
-        "date":"2019/09/16",
-        "duration":8,
-        "status":"approved",
-        "suggestedActivities":[]
-      })
+      expect(pastTrip.duration).to.equal(8);
     })
     // should be able to select present trips
     it("should be able to select trips a user is currently on", () => {
@@ -81,13 +72,21 @@ describe("The User class", () => {
         "duration":4,
         "status":"approved",
         "suggestedActivities":[]
-      })
+      });
     })
     // should be able to select future trips (approved trips)
+    it("should be able to select approved future trips", () => {
+      let futureTrip = user13.viewTrip(""2021/02/07"");
+
+      expect(futureTrip.destinationID).to.equal(4);
+    })
+
     // should be able to select pending trips
+    it("should be able to select pending trips", () => {
+      let pendingTrip = user12.viewTrip("2020/10/17");
 
-
-
+      expect(pendingTrip.status).to.equal("pending");
+    })
   })
 
 })
