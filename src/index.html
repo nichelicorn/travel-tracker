@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <title>Webpack Starter Kit</title>
+    <title>Travel with The Doctor 📘</title>
   </head>
   <body>
-    <h1>Webpack Starter Kit</h1>
+    <header class="hdr-nav">
+      <h1>Travel with The Doctor</h1>
+      <nav>
+        <button type="button" name="tardis">BOOK the Tardis</button>
+        <section>
+          <p>💸</p>
+        </section>
+      </nav>
+    </header>
+    <main>
+      <header class="hdr-welcome">
+        <p>welcome TRAVELER</p>
+      </header>
+      <section class="travel-cards">
+        <header class="hdr-cards">
+          <p>Your Travel Record</p>
+        </header>
+        <article class="card">
 
-    <img src="./images/turing-logo.png" alt="turing logo" height="100px" width="100px">
+        </article>
+        <article class="card">
+
+        </article>
+        <article class="card">
+
+        </article>
+      </section>
+      <section class="booking-page">
+        <header class="hdr-booking-page">
+          <p>Book the Tardis</p>
+        </header>
+        <form class="booking-form" action="index.html" method="post">
+          <select class="destination-list" name="destination-list">
+            <option value="select a destination"></option>
+            <option value="destination1">Destination 1</option>
+            <option value="destination2">Destination 2</option>
+            <option value="destination3">Destination 3</option>
+          </select>
+          <section>
+            <input type="date" name="" value="">
+          </section>
+        </form>
+      </section>
+    </main>
+
 
     <!-- Do not include the index.js or main.bundle.js file here - it is done automatically by the webpack server -->
   </body>
