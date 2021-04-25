@@ -52,14 +52,14 @@ const travelerData = {
     {
       "id":7,
       "name":"Rose Tyler",
-      "userName":"traveler1",
+      "userName":"traveler7",
       "password":"travel2020",
       "travelerType":"thrill-seeker"
   },
     {
       "id":13,
       "name":"Bill Potts",
-      "userName":"traveler1",
+      "userName":"traveler13",
       "password":"travel2020",
       "travelerType":"relaxer"
   }

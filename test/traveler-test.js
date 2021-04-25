@@ -20,17 +20,30 @@ describe("The Traveler class", () => {
       expect(traveler13.id).to.equal(13);
     })
 
+    it("should inherit a name from the User class", () => {
+      expect(traveler1.name).to.equal("River Song");
+    })
+
+    it("should inherit a userName from the User class", () => {
+      expect(traveler7.userName).to.equal("traveler7");
+    })
+
+    it("should inherit a password from the User class", () => {
+      expect(traveler3.password).to.equal("traveler3");
+    })
+    // it should have a property travelerType
+    it("should describe the type of traveler a user is", () => {
+      expect(traveler7.travelerType).to.equal("thrill-seeker");
+      expect(traveler1.travelerType).to.equal("history buff");
+    })
+    // it should have a property trips [] - this will store a user's trips
 
   })
 
 })
-
-
 // test outcomes of inherited properties and methods
 
 // TRAVELER PROPERTIES
-// it should have a property travelerType
-// it should have a property trips [] - this will store a user's trips
 // it should have a property amt spent 0
 
 // it should have a method to request a new trip (instantiate a new Trip)
