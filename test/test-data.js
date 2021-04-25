@@ -33,8 +33,7 @@ const userData = {
   ]
 };
 
-const travelerData = {
-  "travelers":[
+const travelerData = [
     {
       "id":1,
       "name":"River Song",
@@ -63,8 +62,7 @@ const travelerData = {
       "password":"travel2020",
       "travelerType":"relaxer"
   }
-  ]
-};
+];
 
 const agentData = {
   "agents": [
@@ -255,3 +253,5 @@ const destinationData = {
     }
   ]
 };
+
+module.exports = { userData, travelerData, agentData, tripData, destinationData }
