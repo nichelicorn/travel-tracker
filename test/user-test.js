@@ -120,8 +120,17 @@ describe("The User class", () => {
       expect(tripCost).to.equal(2820);
     })
 
-    
-    // should be able to calculate 10% agent fee for all of the above
+    describe("A method to calculate the agent fee for all trips", () => {
+      // should be able to calculate 10% agent fee for all of the above
+      it("should return the agent fee for any trip", () => {
+        let agentFee1 = viewAgentFee(13, "2020/10/17");
+        let agentFee2 = viewAgentFee(7, "2020/10/14");
+
+        expect(agentFee1).to.equal(282);
+        expect(agentFee2).to.equal(432);
+      })
+    })
 
   })
+  
 })
