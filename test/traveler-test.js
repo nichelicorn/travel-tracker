@@ -14,11 +14,17 @@ describe("The Traveler class", () => {
     traveler13 = newTraveler(travelerData[3]);
   })
 
-    
+  describe("The Traveler properties", () => {
+    // it should inherit the User class properties/methods
+    it("should inherit an id from the User class", () => {
+      expect(traveler13.id).to.equal(13);
+    })
+
+
+  })
 
 })
 
-// it should inherit the User class properties/methods
 
 // test outcomes of inherited properties and methods
 
