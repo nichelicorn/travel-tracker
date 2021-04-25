@@ -1,7 +1,7 @@
-class Traveler() {
-  constructor() {
-    
-  }
-}
+// class Traveler() {
+//   constructor() {
+//
+//   }
+// }
 
-export default Traveler;
+// export default Traveler;
