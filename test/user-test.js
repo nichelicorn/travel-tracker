@@ -52,16 +52,20 @@ describe("The User class", () => {
       expect(user1.viewTrip).to.be.a(function);
     })
 
+    it("should require an id and a date as arguments", () => {
+      
+    })
+
     it("should be able to select trips from the past", () => {
       // this method should return a trip from the past
       // should be able to select past trips
-      let pastTrip = user1.viewTrip("2019/09/16");
+      let pastTrip = user1.viewTrip(1, "2019/09/16");
 
       expect(pastTrip.duration).to.equal(8);
     })
     // should be able to select present trips
     it("should be able to select trips a user is currently on", () => {
-      let presentTrip = user7.viewTrip("2020/10/14");
+      let presentTrip = user7.viewTrip(7, "2020/10/14");
 
       expect(presentTrip).to.deep.equal({
         "id":11,
