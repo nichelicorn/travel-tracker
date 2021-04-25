@@ -2,7 +2,7 @@ import { expect } from "chai";
 
 import User from "../src/User.js";
 import { userData } from "../test/test-data.js";
-import { tripData } from "../test/test-data.js"
+// import { tripData } from "../test/test-data.js";
 
 let user1, user3, user7, user13, agent;
 
@@ -96,13 +96,31 @@ describe("The User class", () => {
   describe("A method to view spending", () => {
     // should be able to return past trip spending
     it("should be able to return the amount spent on a past trip", () => {
-      let trip = user5.viewTrip("2020/04/30");
+      let tripCost= user5.viewTripCost("2020/04/30");
 
-      expect(trip.)
+      expect(tripCost).to.equal(2514);
     })
+    // (trip.travelers * destination.estimatedFlightCostPerPerson) + (trip.duration * destination.estimatedLodgingCostPerDay)
     // should be able to return present trip spending
+    it("should be able to return the amount spent on the present trip", () => {
+      let tripCost = user7.viewTripCost("2020/10/14");
+
+      expect(tripCost).to.equal(4320);
+    })
     // should be able to return future trip spending (approved trips)
+    it("should be able to return the amount spent on approved future trips", () => {
+      let tripCost = user13.viewTripCost("2021/02/07");
+
+      expect(tripCost).to.equal(2360);
+    })
     // should be able to calculate cost for pending trips
+    it("should be able to return the amount spent on pending trips", () => {
+      let tripCost = user13.viewTripCost("2020/10/17");
+
+      expect(tripCost).to.equal(2820);
+    })
+
+    
     // should be able to calculate 10% agent fee for all of the above
 
   })
