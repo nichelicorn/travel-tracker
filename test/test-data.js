@@ -203,7 +203,7 @@ const tripData = {
     ]
 }
 
-const destinations = {
+const destinationData = {
   "destinations": [
     {
       "id":1,
