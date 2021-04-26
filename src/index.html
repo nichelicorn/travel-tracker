@@ -1,13 +1,63 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <title>Webpack Starter Kit</title>
+    <title>Travel with The Doctor 📘</title>
   </head>
   <body>
-    <h1>Webpack Starter Kit</h1>
-
-    <img src="./images/turing-logo.png" alt="turing logo" height="100px" width="100px">
-
+    <header class="hdr-nav">
+      <h1>Travel with The Doctor</h1>
+      <nav>
+        <button type="button" name="tardis">BOOK the Tardis</button>
+        <section>
+          <p>💸</p>
+        </section>
+      </nav>
+    </header>
+    <main>
+      <header class="hdr-welcome">
+        <p>welcome TRAVELER</p>
+      </header>
+      <section class="travel-cards">
+        <header class="hdr-cards">
+          <p>Your Travel Record</p>
+        </header>
+        <article class="card">
+          🪐
+        </article>
+        <article class="card">
+          🌏
+        </article>
+        <article class="card">
+          🛰
+        </article>
+      </section>
+      <section class="booking-page hidden">
+        <header class="hdr-booking-page">
+          <p>Book the Tardis</p>
+        </header>
+        <form class="booking-form" action="index.html" method="post">
+          <label for="destination-list">Where in time and space would you like to go?</label>
+          <select class="destination-list" name="destination-list" required aria-required="true">
+            <option value="select a destination"></option>
+            <option value="destination1">The Singing Towers of Derillium</option>
+            <option value="destination2">The Orient Express</option>
+            <option value="destination3">Trenzalore</option>
+          </select>
+          <section>
+            <label for="date-select">When should the Tardis arrive in your kitchen?</label>
+            <input type="date" name="date-select" value="2020-10-31" required aria-required="true">
+            <label for="duration-input">How many sunsets would you like to see?</label>
+            <input type="number" name="duration-input" value="" required aria-required="true">
+          </section>
+          <label for="num-travelers-input">How many traveling companions will you have?</label>
+          <input type="number" name="num-travelers-input" value="" required aria-required="true">
+          <section>
+            <p>The estimated cost of this journey 💸</p>
+          </section>
+          <input type="submit" name="submit-trip-request" value="Request journey on the Tardis">
+        </form>
+      </section>
+    </main>
     <!-- Do not include the index.js or main.bundle.js file here - it is done automatically by the webpack server -->
   </body>
 </html>
