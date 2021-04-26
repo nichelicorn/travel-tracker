@@ -31,22 +31,26 @@
           🛰
         </article>
       </section>
-      <section class="booking-page">
+      <section class="booking-page hidden">
         <header class="hdr-booking-page">
           <p>Book the Tardis</p>
         </header>
         <form class="booking-form" action="index.html" method="post">
-          <select class="destination-list" name="destination-list">
+          <label for="destination-list">Where in time and space would you like to go?</label>
+          <select class="destination-list" name="destination-list" required aria-required="true">
             <option value="select a destination"></option>
-            <option value="destination1">Destination 1</option>
-            <option value="destination2">Destination 2</option>
-            <option value="destination3">Destination 3</option>
+            <option value="destination1">The Singing Towers of Derillium</option>
+            <option value="destination2">The Orient Express</option>
+            <option value="destination3">Trenzalore</option>
           </select>
           <section>
-            <input type="date" name="date-select" value="2020-10-31">
-            <input type="number" name="duration-input" value="">
+            <label for="date-select">When should the Tardis arrive in your kitchen?</label>
+            <input type="date" name="date-select" value="2020-10-31" required aria-required="true">
+            <label for="duration-input">How many sunsets would you like to see?</label>
+            <input type="number" name="duration-input" value="" required aria-required="true">
           </section>
-          <input type="number" name="num-travelers-input" value="">
+          <label for="num-travelers-input">How many traveling companions will you have?</label>
+          <input type="number" name="num-travelers-input" value="" required aria-required="true">
           <section>
             <p>The estimated cost of this journey 💸</p>
           </section>
