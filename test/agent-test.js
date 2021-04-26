@@ -14,4 +14,23 @@ describe("The Agent class", () => {
     traveler1 = new Traveler(travelerData[0]);
   })
 
+  describe("The Agent properties", () => {
+    it("should inherit an id from the User class", () => {
+      expect(agent.id).to.equal("agent");
+    })
+
+    it("should inherit a name from the User class", () => {
+      expect(agent.name).to.equal("The Doctor")
+    })
+
+    it("should inherit a userName from the User class", () => {
+      expect(agent.userName).to.equal("agent");
+    })
+
+    it("should inherit a password from the User class", () => {
+      expect(agent.password).to.equal("travel2020");
+    })
+
+  })
+
 })

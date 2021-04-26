@@ -29,7 +29,7 @@ describe("The Traveler class", () => {
     })
 
     it("should inherit a password from the User class", () => {
-      expect(traveler3.password).to.equal("traveler3");
+      expect(traveler3.password).to.equal("traveler2020");
     })
     // it should have a property travelerType
     it("should describe the type of traveler a user is", () => {
