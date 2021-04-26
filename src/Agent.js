@@ -1,7 +1,7 @@
-// class Agent() {
-//   constructor() {
-//
-//   }
-// }
+class Agent {
+  constructor() {
 
-// export default Agent;
+  }
+}
+
+export default Agent;

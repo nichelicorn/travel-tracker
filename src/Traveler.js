@@ -1,7 +1,7 @@
-// class Traveler() {
-//   constructor() {
-//
-//   }
-// }
-//
-// export default User;
+class Traveler {
+  constructor() {
+
+  }
+}
+
+export default Traveler;

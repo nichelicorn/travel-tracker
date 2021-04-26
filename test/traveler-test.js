@@ -8,7 +8,6 @@ let traveler1, traveler3, traveler7, traveler13;
 describe("The Traveler class", () => {
 
   beforeEach(() => {
-    console.log("traveler data >>> ", travelerData); // undefined; // now is an empty array... fun
     traveler1 = new Traveler(travelerData[0]);
     traveler3 = new Traveler(travelerData[1]);
     traveler7 = new Traveler(travelerData[2]);
